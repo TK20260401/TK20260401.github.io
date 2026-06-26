@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KIKUCHI, Toru — 課題解決型のプロダクトエンジニア</title>
+<meta name="description" content="元教員16年。教育・業務効率化・マネー教育の領域で、動くプロダクトを企画から実装・運用まで一気通貫で制作するエンジニアのポートフォリオ。">
+<style>
+  :root{
+    --bg:#0f1220; --panel:#171b2e; --panel2:#1e2440; --text:#e8eaf2;
+    --muted:#9aa3c0; --accent:#6ea8fe; --accent2:#5be0c6; --line:#2a3155;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Segoe UI","Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.75;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{
+    background:radial-gradient(1200px 400px at 70% -10%,rgba(110,168,254,.18),transparent),
+               radial-gradient(900px 400px at 0% 0%,rgba(91,224,198,.12),transparent);
+    border-bottom:1px solid var(--line);padding:72px 0 56px;
+  }
+  .role{color:var(--accent2);font-weight:600;letter-spacing:.04em}
+  h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.15;margin:.2em 0 .3em}
+  .lead{color:var(--muted);max-width:620px;font-size:1.05rem}
+  .cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{
+    display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;font-size:.95rem;
+    border:1px solid var(--line);background:var(--panel2);color:var(--text);
+  }
+  .btn.primary{background:linear-gradient(135deg,var(--accent),#7c6efe);color:#0b1020;border:none}
+  .btn:hover{text-decoration:none;transform:translateY(-1px)}
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:1.5rem;margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:28px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .tag{font-size:.78rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 11px}
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .skill{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .skill b{display:block;color:var(--accent2);font-size:.85rem;margin-bottom:6px;letter-spacing:.03em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .card{
+    background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);
+    border-radius:14px;padding:22px;display:flex;flex-direction:column;transition:.2s;
+  }
+  .card:hover{border-color:var(--accent);transform:translateY(-3px)}
+  .card .flag{font-size:.72rem;color:#0b1020;background:var(--accent2);font-weight:700;
+    border-radius:6px;padding:2px 8px;align-self:flex-start;margin-bottom:10px}
+  .card h3{font-size:1.15rem;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.92rem;flex:1}
+  .card .links{margin-top:14px;display:flex;gap:14px;font-size:.9rem;font-weight:600}
+  .live::before{content:"● ";color:var(--accent2)}
+  footer{padding:40px 0 64px;color:var(--muted);font-size:.9rem;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="role">課題解決型のプロダクトエンジニア</div>
+    <h1>KIKUCHI, Toru</h1>
+    <p class="lead">教育現場で16年間培った「課題を見つけ、仕組みで解決する」視点を、ソフトウェア開発へ。企画・要件定義から UX 設計・実装・デプロイ・運用までを一気通貫で進めます。</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/TK20260401/portfolio">📂 ポートフォリオ詳細</a>
+      <a class="btn" href="https://github.com/TK20260401">🐙 GitHub</a>
+      <a class="btn" href="https://otetsudai-bank-beta.vercel.app">🔗 代表作デモ</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="sub">元教員 → エンジニア</p>
+    <p style="color:var(--muted);max-width:720px">
+      現場の困りごとを起点に、学習用ツールやアプリを多数自作してきました。技術は「ユーザーの課題を解くための手段」と捉え、使う人が迷わない体験づくりと、企画から運用までやり切ることを大切にしています。アクセシビリティ・ユニバーサルデザイン・セキュリティにも一貫してこだわっています。
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="sub">フロントエンドを軸にしたフルスタック</p>
+    <div class="skills">
+      <div class="skill"><b>FRONTEND</b>TypeScript / React 19 / Next.js (App Router) / Tailwind CSS / shadcn/ui</div>
+      <div class="skill"><b>BACKEND</b>Supabase (PostgreSQL / Auth / Row Level Security / Edge Functions)</div>
+      <div class="skill"><b>AI</b>Anthropic Claude API</div>
+      <div class="skill"><b>MOBILE</b>React Native / Expo</div>
+      <div class="skill"><b>INFRA</b>Vercel (CI/CD) / GitHub</div>
+      <div class="skill"><b>QUALITY</b>アクセシビリティ(WCAG AA) / セキュリティ(RLS・ハッシュ化) / ドキュメント</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="sub"><span class="live">付き</span>はライブデモあり</p>
+    <div class="grid">
+
+      <div class="card">
+        <span class="flag">代表作</span>
+        <h3>おてつだいバンク</h3>
+        <p>子供向け「お手伝い×マネー教育」アプリ。三役認証・ウォレット3分割・株式シミュレーター・AIアドバイザー・RPG要素まで備えた作り込み。Supabase 15テーブルにRLSを全面適用。</p>
+        <div class="tags"><span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">Claude API</span></div>
+        <div class="links"><a class="live" href="https://otetsudai-bank-beta.vercel.app">Live Demo</a><a href="https://github.com/TK20260401/otetsudai-bank">Repo</a></div>
+      </div>
+
+      <div class="card">
+        <h3>おこづかいクエスト（モバイル版）</h3>
+        <p>お手伝い×マネー教育のモバイルアプリ。React Native / Expo で実装した大規模なクライアント。</p>
+        <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span></div>
+        <div class="links"><a href="https://github.com/TK20260401/otetsudai-quest-mobile">Repo</a></div>
+      </div>
+
+      <div class="card">
+        <h3>ISLOS（学習プラットフォーム構想）</h3>
+        <p>「情報I・ITパスポート・基本情報」等の学習を支える複数アプリを束ねるプラットフォーム構想。戦略・設計ドキュメントも整備。</p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">設計</span></div>
+        <div class="links"><a class="live" href="https://20260401-one.vercel.app">Live Demo</a><a href="https://github.com/TK20260401/20260401-Project-Blueprint">Repo</a></div>
+      </div>
+
+      <div class="card">
+        <h3>ユニバーサルゲーム</h3>
+        <p>知的障害・肢体不自由のある方も含め、誰でも楽しめるアクセシブルなゲーム集。</p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">Expo</span><span class="tag">a11y</span></div>
+        <div class="links"><a href="https://github.com/TK20260401/universal-games">Repo</a></div>
+      </div>
+
+      <div class="card">
+        <h3>Report Hub</h3>
+        <p>日報・週報・月報を一元管理する業務レポートシステム。積み上げで効率と知見を蓄積。</p>
+        <div class="tags"><span class="tag">Next.js</span><span class="tag">業務効率化</span></div>
+        <div class="links"><a class="live" href="https://report-hub-one.vercel.app">Live Demo</a><a href="https://github.com/TK20260401/report-hub">Repo</a></div>
+      </div>
+
+      <div class="card">
+        <h3>ROI Simulator</h3>
+        <p>売上計画とROIを即時試算し、複数プランを比較できるシミュレーター。</p>
+        <div class="tags"><span class="tag">HTML/JS</span><span class="tag">KGI/KPI</span></div>
+        <div class="links"><a class="live" href="https://roi-simulator-delta.vercel.app">Live Demo</a><a href="https://github.com/TK20260401/roi-simulator">Repo</a></div>
+      </div>
+
+    </div>
+    <p style="color:var(--muted);margin-top:22px;font-size:.9rem">▶ その他のプロジェクトは <a href="https://github.com/TK20260401?tab=repositories">GitHubリポジトリ一覧</a> へ。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p class="sub">お気軽にどうぞ</p>
+    <p style="color:var(--muted)">ご連絡は <a href="https://github.com/TK20260401">GitHub プロフィール</a> 経由でお願いします。
+    <!-- 個人アカウントへコピーする際: メール／SNS等をここに追記 --></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 KIKUCHI, Toru — Built and hosted on GitHub Pages</div>
+</footer>
+</body>
+</html>
